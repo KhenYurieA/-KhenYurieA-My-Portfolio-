@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khen Yurie Añasco — Portfolio</title>
+<style>
+
+    a {
+      text-decoration: none;
+    }
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,500&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ec;--fg:#1a1a1a;--mut:#6b6760;--line:#1a1a1a;--acc:#d9531e;--card:#fbf9f5}
+@media (prefers-color-scheme:dark){:root{--bg:#151412;--fg:#f1ede6;--mut:#9a958c;--line:#f1ede6;--card:#1d1b19}}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif;line-height:1.55}
+.wrap{max-width:560px;margin:0 auto;padding:20px 20px 60px}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--mut)}
+.head{display:flex;gap:16px;align-items:center;border-top:2px solid var(--line);padding-top:16px;margin-top:10px}
+.avatar{width:84px;height:84px;flex:none;border:2px solid var(--line);background:var(--card);display:grid;place-items:center;font-family:Newsreader,Georgia,serif;font-size:34px;font-style:italic;color:var(--acc)}
+h1{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:34px;line-height:1.05;margin:0}
+h1 i{display:block}
+.sub{margin-top:6px;color:var(--acc);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-family:'JetBrains Mono',monospace}
+.lead{font-size:18px;margin:22px 0;padding-top:16px;border-top:1px solid var(--line)}
+.btn{display:inline-block;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.1em;font-size:12px;padding:10px 14px;border:1.5px solid var(--line);background:transparent;color:var(--fg);text-decoration:none;cursor:pointer}
+.btn.dark,.btn.on{background:var(--fg);color:var(--bg)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.links{border:2px solid var(--line);padding:6px 16px;margin:18px 0}
+.links a{display:flex;justify-content:space-between;gap:10px;padding:12px 0;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--mut)}
+.links a:last-child{border:0}
+.links span:last-child{text-decoration:underline;word-break:break-all;text-align:right}
+.status{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--mut)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fa84f;margin-right:6px}
+.role{margin-top:34px}
+.role .row{margin-top:10px}
+.role .btn{flex:1;text-align:center;padding:14px 10px}
+section{margin-top:44px;padding-top:20px;border-top:1px solid var(--line)}
+h2{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:28px;margin:0 0 16px;display:flex;align-items:baseline;gap:12px}
+h2 small{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc)}
+.box{border:2px solid var(--line);background:var(--card)}
+.box>div{padding:16px;border-bottom:1px solid var(--mut)}
+.box>div:last-child{border:0}
+.box .v{margin-top:6px}
+.proj{display:grid;grid-template-columns:44px 1fr;gap:6px;margin-bottom:26px}
+.proj h3{margin:0 0 4px;font-size:18px}
+.proj p{margin:0 0 8px;color:var(--mut);font-size:15px}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;border:1px solid var(--mut);padding:2px 8px;margin:0 4px 4px 0;background:var(--card)}
+.cert{padding:12px 0;border-bottom:1px solid var(--mut)}
+.cert b{display:block;font-weight:600}
+.edu{display:grid;grid-template-columns:84px 1fr;gap:12px;margin-bottom:22px}
+.edu h3{margin:0;font-size:16px}
+.edu p{margin:2px 0 0;color:var(--mut);font-size:14px}
+.ph{color:var(--acc)}
+footer{margin-top:50px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mono">Portfolio</div>
+  <div class="head">
+   <img class="avatar" src="https://i.imgur.com/RGBKaGX.jpeg">
+
+    <div>
+      <h1>Khen Yurie <i>Añasco</i></h1>
+      <div class="sub" id="sub"></div>
+    </div>
+  </div>
+  <p class="lead" id="lead"></p>
+
+  <div class="row">
+    <a class="btn" href="#work">Projects</a>
+    <a class="btn" href="#stack">Stack</a>
+    <a class="btn" href="#contact">Contact</a>
+  </div>
+
+  <div class="links">
+    <a href="#"><span class="mono">GitHub</span><span>github.com/Akhenyurie→</span></a>
+    <a href="#"><span class="mono">LinkedIn</span><span>linkedin.com/in/KhenYurie →</span></a>
+    <a href="resume.html"><span class="mono">Resume</span><span>resume →</span></a>
+
+  </div>
+  <div class="row">
+    <a class="btn dark" href="mailto:akhenyurie@gnail.com">Email me</a>
+    <a class="btn" href="#">GitHub</a>
+  </div>
+  <div class="status"><span class="dot"></span><span id="status"></span></div>
+
+  <div class="role">
+    <div class="mono">— My role →</div>
+    <div class="row" id="roles"></div>
+  </div>
+
+  <section id="stack">
+    <h2><small>01 —</small>Stack</h2>
+    <div class="box" id="stackBox"></div>
+  </section>
+
+  <section id="work">
+    <h2><small>02 —</small>Selected work</h2>
+    <div id="workList"></div>
+  </section>
+
+  <section>
+    <h2><small>03 —</small>Certifications</h2>
+    <div class="https://www.credly.com/badges/3e01bb47-517f-416a-b5fe-d79a8c528a81/public_url"><b>Prompt Like An Engineer <span class="ph"></span></b><span class="mono">CNA</span></div>
+    <div class="https://www.credly.com/badges/30362664-2323-4130-a894-5f66659befa6/public_url
+"><b>IT Support Basic<span class="ph"></span></b><span class="mono"> CNA</span></div>
+    
+  <section>
+    <h2><small>04 —</small>Education &amp; Experience</h2>
+    <div class="edu"><span class="mono">2025–2026</span><div><h3>Bachelor of Science and Information System <span class="ph"></span></h3><p>College or University</p></div></div>
+    <div class="edu"><span class="mono">2024–2025</span><div><h3> Information and Communication Technology <span class="ph"></span></h3><p>Danao National Highschool</p></div></div>
+    <div class="edu"><span class="mono">2025</span><div><h3>Work Immersion/Internships <span class="ph"></span></h3><p>Danao Adventure Park·Help Desk </p></div></div>
+  </section>
+
+  <section id="contact">
+    <h2><small>05 —</small>Contact</h2>
+    <div class="box">
+      <div><span class="mono">Phone</span><div class="v ph">09300876344</div></div>
+      <div><span class="mono">Email</span><div class="v"><a href="mailto:akhenyurie@email.com" style="color:inherit">akhenyurie@email.com</a></div></div>
+      <div><span class="mono">Location</span><div class="v">Philippines</div></div>
+    </div>
+  </section>
+
+  <footer class="mono">© Khen Yurie Añasco 2026</footer>
+</div>
+
+<script>
+const R={
+ "Web Developer":{
+  sub:"Web Developer",
+  lead:"I build clean, fast, responsive websites with HTML, CSS and JavaScript — focused on simple layouts that work well on every screen, and learning by shipping real projects.",
+  status:"Open to web projects & internships",
+  stack:[["Frontend","HTML · CSS · JavaScript"],["Frameworks","React · Tailwind CSS (example)"],["Backend","Node.js · REST APIs (example)"],["Design","Figma · responsive layouts"],["Tools","Git · GitHub · VS Code"]],
+  work:[["Personal Portfolio","A responsive portfolio site with light/dark mode.",["HTML","CSS","JS"]],["Task Tracker App","A simple to-do app with filters and saved data.",["JavaScript","Web App"]],["Landing Page Template","A reusable landing page for small businesses.",["HTML","Tailwind"]]]},
+ "AI Content Creator":{
+  sub:"AI Content Creator",
+  lead:"I turn AI tools into repeatable content workflows — prompt systems, AI-assisted visuals, voiceovers and copy that reads human and ships on schedule.",
+  status:"Open to AI content & automation work",
+  stack:[["Prompting","Prompt engineering · system prompts"],["Content & Copy","AI-assisted writing · captions"],["Visual","AI image generation · thumbnails"],["Audio & Voice","Text-to-speech · voiceover"],["Tools","ChatGPT · Claude · Midjourney · CapCut"]],
+  work:[["Prompt Library","Reusable prompts for writing, images and ideas.",["Prompting","Templates"]],["AI Content Pipeline","Topic → draft, captions and image prompts in one pass.",["Workflow","LLM"]],["AI Voiceover Reels","Short videos with AI voice, visuals and captions.",["Voiceover","Reels"]]]}
+};
+const $=id=>document.getElementById(id);
+const rolesEl=$('roles');
+function show(name){
+  const d=R[name];
+  $('sub').textContent=d.sub;$('lead').textContent=d.lead;$('status').textContent=d.status;
+  $('stackBox').innerHTML=d.stack.map(s=>`<div><span class="mono">${s[0]}</span><div class="v">${s[1]}</div></div>`).join('');
+  $('workList').innerHTML=d.work.map((w,i)=>`<div class="proj"><span class="mono">0${i+1} /<br>0${d.work.length}</span><div><h3>${w[0]}</h3><p>${w[1]}</p>${w[2].map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`).join('');
+  [...rolesEl.children].forEach(b=>b.classList.toggle('on',b.textContent===name));
+}
+Object.keys(R).forEach(n=>{const b=document.createElement('button');b.className='btn';b.textContent=n;b.onclick=()=>show(n);rolesEl.appendChild(b)});
+show("Web Developer");
+</script>
+</body>
+</html
