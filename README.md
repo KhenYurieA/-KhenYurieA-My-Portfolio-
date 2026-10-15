@@ -1,1 +1,1 @@
-# My-Portfolio
+# My-Portfolio I am an aspiring web developer passionate about building clean, minimalist websites. My portfolio showcases projects in HTML, CSS, and JavaScript, including a bakeshop site and a personal developer portfolio. I am continuously learning Git, GitHub, and basic Python, while also exploring statistics and problem‑solving. My goal is to grow into a successful developer who creates practical and user‑friendly digital solutions.
